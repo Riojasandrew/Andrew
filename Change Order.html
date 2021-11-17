@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter timer</title>
+</head>
+<body>
+
+<h1> Efficiency Improvement for Mission Control
+    <img src= "UATspaceLogo.jpg" alt="Space Program">
+</h1>
+    <div id="container">
+        <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Second</p>
+        <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semincolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semincolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
+        <button id="start" class="btn">Start</button>
+        <button id="rest" class="btn">Reset</button>
+        
+    </div>
+
+    <script src="practice.js"></script>
+<br>
+
+
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Login</button>
+
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" method="POST">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>First Name:</b></label>
+            <input type="text" placeholder="Place First Name" name="uname" maxlength="20" required>
+
+            <label for="lname"><b>Last Name:</b></label>
+            <input type="text" placeholder="Place Last Name" name="lname" maxlength="20" required>
+
+            <label for="psw"><b>Badge Number:</b></label>
+            <input type="password" placeholder="Badge Number" name="psw" maxlength="3" required>
+
+            <button type="submit" onclick="clicked();">Login</button>
+        </div>
+
+        <div class="container" style="background-color: lightseagreen;">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+
+    </form>
+</div>
+
+<!-- First and Last name 20 character only Badge number shouldn't pass 3 input numbers-->
+
+<script>
+    var modal = document.getElementById('id01');
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            
+        }
+    }
+</script>
+
+
+</body>
+</html>
