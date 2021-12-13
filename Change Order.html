@@ -11,15 +11,136 @@
 <h1> Efficiency Improvement for Mission Control
     <img src= "UATspaceLogo.jpg" alt="Space Program">
 </h1>
+
+<!--  This is the table area    -->
+<style>
+#customers{
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #Customers th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color:white;}
+
+#customers tr:hover {background-color: #ddd;}
+
+
+
+    </style>
+<body>
+    <table id="customers">
+        <tr>
+            <th>Data type</th>
+            <th>Reading</th>
+        </tr>
+        <tr>
+           <td>Time elasped:</td>
+           <td>15 seconds</td> 
+        </tr>
+        <tr>
+            <td>Latiud:</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Longitude:</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>GPS Altitude:</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>BMP Senor Altitude:</td>
+            <td>30383.04</td>
+        </tr>
+        <tr>
+            <td>BMP Sensor Pressure:</td>
+            <td>2.34</td>
+        </tr>
+        <tr>
+            <td>BMP Sensor Temperature:</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Digital Sensor Temperature:</td>
+            <td>24.12</td>
+        </tr>
+        <tr>
+            <td>CSSSensor Temperature:</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>CSS Sensor cCO2:</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>CSS Sensor TVOC</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>UV:</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Accel X:</td>
+            <td>-0.87</td>
+        </tr>
+        <tr>
+            <td>Accel Y:</td>
+            <td>-0.02</td>
+        </tr>
+        <tr>
+            <td>Accel Z:</td>
+            <td>9.61</td>
+        </tr>
+        <tr>
+            <td>Magnetic X:</td>
+            <td>0.13</td>
+        </tr>
+        <tr>
+            <td>Magnetic Y:</td>
+            <td>0.57</td>
+        </tr>
+        <tr>
+            <td>Magnetic Z:</td>
+            <td>-0.24</td>
+        </tr>
+        <tr>
+            <td>Gyro X:</td>
+            <td>4.66</td>
+        </tr>
+        <tr>
+            <td>Gyro Y:</td>
+            <td>0.01</td>
+        </tr>
+        <tr>
+            <td>Gyro Z:</td>
+            <td>-0.4</td>
+        </tr>
+
+    </table>
+</body>
+
+
+
+<!--  Start and stop Button    -->
     <div id="container">
         <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Second</p>
         <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semincolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semincolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
         <button id="start" class="btn">Start</button>
         <button id="rest" class="btn">Reset</button>
         
+        
+        
     </div>
-
+ <!--Buttons event linked-->
     <script src="practice.js"></script>
+
 <br>
 
 
@@ -67,6 +188,29 @@
     }
 </script>
 
+
+
+<!--For this I looked up the sound that I wanted than converted it into my folder and input it to my audio type-->
+
+
+
+<audio control autoplay>
+    <source src="Space station.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+
+
+
+<!--Color background-->
+
+<style>
+    body{
+        background-color: lightgreen;
+    }
+</style>
 
 </body>
 </html>
